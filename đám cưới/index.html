@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Thúy Hiền & Nguyễn Trung Hiếu</title>
+     <!--css bootstrap-->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ <!--font icon-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+ <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+ <!--css Hà-->
+	<link rel="stylesheet" href="css/happyending.css">
+ <!--phong chu-->
+ <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+ <style>
+    /* oliven-aside{
+        padding: 60px 30px;
+    width: 350px;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    z-index: 1001;
+    background: #ffefef;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    scrollbar-width: none;
+    } */
+/* #oliven-aside .oliven-logo {
+    margin-bottom: 0;
+} */
+#oliven-aside .oliven-logo a {
+    display: inline-block;
+}
+a:link{
+    text-decoration: none;
+}
+.lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 52px;
+    height: 52px;
+    transform: rotate(45deg);
+    transform-origin: 32px 32px;
+}
+.lds-heart div {
+    top: 23px;
+    left: 19px;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: var(--primary-color);
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+#oliven-aside .oliven-logo a span {
+    display: block;
+    font-size: 35px;
+    color: var(--primary-color);
+    font-family: 'Alex Brush', cursive;
+    font-weight: 400;
+    display: block;
+    margin: 0 -30px;
+    text-align: center;
+    line-height: 1.5em;
+}
+#oliven-aside .oliven-logo h6 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 5px;
+    color: #000;
+    margin-bottom: 5px;
+}
+#oliven-aside .oliven-main-menu ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+#oliven-aside .oliven-main-menu ul li {
+    margin: 3px 0 3px 0;
+    padding: 0 0 3px 0;
+    list-style: none;
+}
+/* @media screen and (max-width: 1400px)
+#oliven-aside .oliven-main-menu ul li {
+    margin: 0;
+} */
+#oliven-aside .oliven-main-menu ul li a {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.5em;
+    letter-spacing: 0.5px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    border-bottom: 1px solid transparent;
+    text-transform: uppercase;
+}
+span, a, a:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+#oliven-aside .oliven-main-menu ul li {
+    margin: 3px 0 3px 0;
+    padding: 0 0 3px 0;
+    list-style: none;
+}
+#oliven-aside .footer1 {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+#oliven-aside .separator {
+    width: 60px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 1px solid rgb(242 60 68);
+    margin: 5px auto;
+}
+#oliven-aside .footer1 p{
+    font-size: 12px;
+    color: #888;
+    letter-spacing: 0.5px;
+}
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #888;
+    margin: 0 0 20px;
+}
+/*home*/
+/* @media screen and (max-width: 991px)
+.header {
+    background-position: center center;
+} 
+@media screen and (max-width: 991px)
+.header {
+    background-position: center center;
+}
+chu chuc mung
+@media screen and (max-width: 991px)
+.container {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.container {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+@media (min-width: 768px)
+.container {
+    max-width: 720px;
+}
+@media (min-width: 576px)
+.container {
+    max-width: 540px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}*/
+.header {
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.valign {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.bg-img {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+}
+.text-center {
+    text-align: center !important;
+}
+/* @media (min-width: 768px)
+.col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+} 
+@media screen and (max-width: 1280px)
+.header .caption h1 {
+    font-size: 60px;
+}
+@media screen and (max-width: 1500px)
+.header .caption h1 {
+    font-size: 90px;
+}*/
+.header .caption h1{
+    font-family: dancing script;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    font-size: 120px;
+    color: #FFF;
+    display: block;
+    line-height: 1em;
+    position: relative;
+}
+
+.js .animate-box {
+    opacity: 0;
+}
+.header .caption h1 span {
+    display: inline-block;
+}
+.header .caption h5 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+span, a, a:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+.header .arrow i {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 20px;
+}
+/* couple */
+#couple {
+    background-color: white;
+}
+/* @media screen and (max-width: 1200px)
+.section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+} */
+.container {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+/* @media screen and (max-width: 991px)
+.bridegroom .item, .bridegroom .toright .info {
+    text-align: center;
+} */
+.bridegroom .item {
+    padding: 30px;
+    border-radius: 0px;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid var(--title-in-background-color) !important;
+}
+.js .animate-box {
+    opacity: 0;
+}
+.h-100 {
+    height: 100% !important;
+}
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+.flex-column {
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+}
+.bridegroom .toright .img {
+    float: right;
+}
+/* @media screen and (max-width: 991px)
+.bridegroom .img {
+    margin: auto;
+    float: none !important;
+} */
+.bridegroom .img {
+    max-width: 240px;
+    max-height: 240px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 14px;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+/* @media screen and (max-width: 991px)
+.bridegroom .item, .bridegroom .toright .info {
+    text-align: center;
+} */
+.bridegroom .toright .info {
+    text-align: center;
+}
+/* @media screen and (max-width: 991px)
+.bridegroom .info {
+    margin: 30px 0 0 0 !important;
+} */
+.full-width {
+    width: 100% !important;
+}
+.bridegroom .info h6 {
+    font-size: 40px;
+    margin-bottom: 5px;
+    font-family: 'Alex Brush', cursive;
+}
+.bridegroom .info p {
+    margin-top: 10px;
+}
+.bridegroom .info p i {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #888;
+    margin: 0 0 20px;
+}
+.bridegroom .info .social {
+    margin-top: 10px;
+}
+.bridegroom .toright .info .social a {
+    margin-right: 0;
+    margin-left: 10px;
+}
+/*loi noi*/
+/* @media screen and (max-width: 991px)
+.oliven-couple-title {
+    font-size: 32px;
+    line-height: 1.2em;
+    margin-bottom: 15px;
+} */
+.oliven-couple-title {
+    display: block;
+    position: relative;
+    top: 12px;
+    font-family: 'Alex Brush', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1.5em;
+    margin-bottom: 5px;
+}
+.title-in-background-color {
+    color: red;
+}
+/* media screen and (max-width: 991px)
+.oliven-couple-subtitle {
+    font-size: 18px;
+} */
+.col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.button-accessibilities .theme-btn {
+    padding: 15px 20px !important;
+    min-width: 230px !important;
+    margin: 10px 5px 0 !important;
+    font-size: .8rem !important;
+    text-transform: uppercase;
+}
+/* #countdown */
+#countdown {
+    text-align: center;
+}
+#countdown .section-head {
+    margin-bottom: 15px;
+    z-index: 1;
+}
+#countdown .section-head h4 {
+    position: relative;
+    color: #fff;
+    font-family: 'Alex Brush', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    margin-bottom: 0;
+}
+#countdown ul{
+    margin-bottom: 0px;
+    padding: 0;
+}
+/* story */
+/* @media screen and (max-width: 1200px)
+.section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+} */
+.story_heading {
+    /* position: relative; */
+    text-align: center;
+}
+.oliven-title-meta {
+    display: block;
+    position: relative;
+    top: 12px;
+    font-family: 'Alex Brush', cursive;
+    font-weight: 400;
+    font-size: 30px;
+    color: red;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+.oliven-title {
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.story_main {
+    position: relative;
+}
+.story_main-item {
+    margin-bottom: 50px;
+}
+.story_main-item-img {
+    padding-bottom: 40px;
+    position: relative;
+}
+.story .story-img .img {
+    /* padding: 0 30px 30px 15px; */
+    position: relative;
+}
+.story .story-img .img img {
+    position: relative;
+    z-index: 2;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+img {
+   
+    overflow: clip;
+}
+.story_main-item-img-left-heart {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    color: red;
+}
+.couple_heading-icon {
+    font-size: 28px;
+}
+.oliven-story-title{
+    color: #000;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    z-index: 1;
+    text-align: left;
+    position: relative;
+}
+.oliven-story-date {
+    text-align: left;
+    font-size: 18px;
+}
+.story_main-item-text-left .oliven-story-title, .story_main-item-text-left .oliven-story-date, .story_main-item-text-left p {
+    text-align: right;
+}
+.story_main-item-img {
+    padding-bottom: 40px;
+    position: relative;
+}
+ </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <aside id="oliven-aside" class="">
+                    <div class="oliven-logo">
+                        <a href="#home">
+                            <div class="lds-heart"><div></div></div>
+                            <span>Trung Hiếu &amp; Thúy Hiền </span>
+                            <h6>17 March 2024</h6>
+                        </a>
+                    </div>
+                    <nav class="oliven-main-menu">
+                        <ul>
+                            <li><a href="#couple">Cặp đôi</a></li>
+                            
+                                                <li><a href="#story">Chuyện tình yêu</a></li>
+                                                
+                                                
+                                                <li><a href="#gallery">Album cưới</a></li>
+                                                
+                                                <li><a href="#whenwhere">Sự kiện</a></li>
+                                                
+                                                <li><a href="#rsvp">Lời chúc</a></li>  
+                                                
+                                            </ul>
+                    </nav>
+                    <div class="footer1"> <span class="separator"></span>
+                        <p>Trung Hiếu &amp; Thúy Hiền  wedding<br>17 March 2024</p>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-9">
+                <div id="oliven-main" style="
+                   
+                ">
+                    <header id="home" class="header valign bg-img parallaxie" data-background="https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/templates/60d9d51ad8eec60dc9382e37/da166d7d5559dc40cc72dc01b148c09c.jpg" style="background-image: url(&quot;https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/templates/60d9d51ad8eec60dc9382e37/da166d7d5559dc40cc72dc01b148c09c.jpg&quot;);" tabindex="-1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 text-center caption">
+                                    <h1 class="animate-box fadeInUp animated" data-animate-effect="fadeInUp"><span>Trung Hiếu</span> <span>&amp;</span> <span>Thúy Hiền </span></h1>
+                                    <h5 class="animate-box fadeInUp animated" data-animate-effect="fadeInUp">31 December 2023</h5> 
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="arrow bounce text-center">
+                                        <a href="#couple"> <i class="ti-heart"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div id="couple" class="bridegroom cleIar section-padding bg-pink">
+                        <div class="container">
+                            <!--<div class="couple_heading">-->
+                            <!--    <h2 class="couple_heading-text title-in-background-color">Thông tin cô dâu & chú rể</h2>-->
+                            <!--    <span></span>-->
+                            <!--    <i class="couple_heading-icon title-in-background-color fa fa-heart"></i>-->
+                            <!--    <span></span>-->
+                            <!--</div>-->
+                            <div class="row mb-20">
+                                <div class="col-xl-6 mb-30">
+                                    <div class="item toright animate-box d-flex flex-column align-items-center h-100 fadeInLeft animated" data-animate-effect="fadeInLeft">
+                                        <div class="img"> <img src="https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/da3b417c76a407d7a3a5d33999abc5f9.jpeg" alt=""> </div>
+                                        <div class="info valign text-center">
+                                            <div class="full-width">
+                                                <h6>Nguyễn Thúy Hiền</h6>
+                                                      <p><i class="ti-heart"></i></p>
+                                                <!--<p class="birthday-main">07/11</p>-->
+                                                                         
+                                                <p>Chàng trai đến từ tỉnh Thái Bình.
+        Tuy hơi ít nói nhưng là người luôn ở cạnh lắng nghe mỗi khi bạn cần chia sẻ. Quản lý cảm xúc tốt &amp; sống khá tình cảm.</p>
+                                                <div class="social">
+                                                    <div class="full-width">
+                                                                                                        <a href="https://www.facebook.com/ldhoang1995?mibextid=9R9pXO" target="_blank" class="icon"> <i class="ti-facebook"></i> </a>
+                                                        
+                                                        
+                                                                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 mb-30">
+                                    <div class="item animate-box d-flex flex-column align-items-center h-100 fadeInRight animated" data-animate-effect="fadeInRight">
+                                        <div class="img"> <img src="https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/a7f29f088aa91e3da208c8d41023321f.jpeg" alt=""> </div>
+                                        <div class="info valign text-center">
+                                            <div class="full-width">
+                                                <h6>Lê Phan Kiều Diễm </h6>
+                                                  <p><i class="ti-heart"></i></p>
+                                                <!--<p class="birthday-main">25/06</p>-->
+                                                                                
+                                              
+                                                <p>Đến từ tỉnh Tiền Giang. Người Miền Tây tính tình hoà đồng, học hỏi nhanh. Thích tìm tòi cái mới. Yêu động vật và thích trồng rau.</p>
+                                                <div class="social">
+                                                    <div class="full-width">
+                                                                                                        <a href="https://www.facebook.com/lpkdiiem?mibextid=9R9pXO" target="_blank" class="icon"> <i class="ti-facebook"></i> </a>
+                                                        
+                                                                                                        
+                                                                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center animate-box fadeInUp animated" data-animate-effect="fadeInUp">
+                                    <h3 class="oliven-couple-title title-in-background-color">31-12-2023 (⁠っ⁠˘⁠з⁠(⁠˘⁠⌣⁠˘⁠&nbsp;⁠)⁠♡</h3>
+                                    <h4 class="oliven-couple-subtitle">Một lời chúc phúc từ bạn sẽ góp cho lễ cưới của chúng mình có thêm một niềm hạnh phúc và rất vinh hạnh khi được gặp và đón tiếp các bạn trong một dịp đặc biệt như ngày trọng đại của chúng mình. Xin gửi lời cảm ơn sâu sắc nhất ❣️  </h4> 
+                                </div>
+                            </div>
+        
+                                                <div class="row button-accessibilities animate-box fadeInUp animated" data-animate-effect="fadeInUp">
+                                <div class="col col-12">
+                                    <div class="text-center" style="margin-top:30px">
+                                                                        <a href="#rsvp" class="theme-btn album">
+                                            <span class="content-button">
+                                                <img class="access-section-icon" src="https://cdn.biihappy.com/ziiweb/images/static/common/wishes.png" alt="">
+                                                Gửi lời chúc
+                                            </span>
+                                        </a>
+                                                                                                        <a href="https://chuyen2chungminh.iwedding.info/rsvp" target="_blank" class="theme-btn album">
+                                            <span class="content-button">
+                                                <img class="access-section-icon" src="https://cdn.biihappy.com/ziiweb/images/static/common/rsvp4.png" alt="">
+                                                Xác nhận tham dự
+                                            </span>
+                                        </a>
+                                                                                                    </div>
+                                </div>
+                            </div>
+                                            </div>
+                    </div>
+                 
+                    <div id="countdown" class="section-padding bg-img" data-background="https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/templates/60d9d51ad8eec60dc9382e37/dc67159d1863909dbd657f0cc304cfcb.jpg" style="background-image: url(&quot;https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/templates/60d9d51ad8eec60dc9382e37/dc67159d1863909dbd657f0cc304cfcb.jpg&quot;);">
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-head col-md-12">
+                                    <h4>Hôn nhân là chuyện cả đời, yêu người vừa ý, cưới người mình thương!</h4> 
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <ul id="clock" data-date="2023-12-31" data-text-day="Ngày" data-text-hour="Giờ" data-text-minute="Phút" data-text-second="Giây"><li><span id="days">60</span>Ngày</li><li><span id="hours">08</span>Giờ</li><li><span id="minutes">33</span>Phút</li><li><span id="seconds">53</span>Giây</li></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                                <div id="story" class="story section-padding">
+                        <div class="container" style="max-width:1140px;">
+                            <div class="story_heading">
+                                <h4 class="oliven-title-meta">Our love story</h4>
+                                <h3 class="oliven-title mb-5">Chuyện Tình Yêu</h3>
+                            </div>
+                            <div class="story_main">
+                                                                                            <div class="row story_main-item">
+                                            <div class="story_main-item-img col-lg-6 pr-lg-5">
+                                                <div class="story-img animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                                                    <div class="img"> <img src="https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/ac8376f600b015c5423595c6463b693f.jpeg" class="img-fluid" alt=""> </div>
+                                                </div>
+                                                <i class="d-none d-lg-block story_main-item-img-left-heart couple_heading-icon fa fa-heart"></i>
+                                            </div>
+                                            <div class="story_main-item-text col-lg-6 pl-lg-5 animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+                                                <h3 class="oliven-story-title mb-1">Bạn có tin vào duyên phận không?</h3>
+                                                <p class="oliven-story-date">10/8/2019</p>
+                                                <p>Chúng mình chưa từng nghĩ đến sẽ có ngày lại yêu 1 người ở cách xa nhau tận 1900km.<br>
+        Ngày đầu gặp nhau trong buổi tiệc tại nhà bạn chung của nhau, chúng mình ko nói chuyện và cũng ko có ấn tượng gì về đối phương.<br>
+        Mà chắc là do duyên gieo cho nhau gặp gỡ, quý mến, rồi yêu nhau.<br>
+        Chúng mình từ 2 con người xa lạ mà bước vào cuộc đời nhau.<br>
+        Lắm lúc nghĩ chẳng hiểu yêu đối phương ở điểm gì. Nhưng ở cạnh chỉ nhìn nhau thôi là buồn cười, chưa kịp nói đã hiểu, biết sẽ làm gì, và đặc biệt là bao dung cho nhau. Thật sự là gặp đúng người, đúng thời điểm.<br>
+        5 năm ở Nhật may mắn giữa chừng ko để lạc nhau!</p>
+                                            </div>
+                                        </div>
+                                                                                                                        <div class="row story_main-item flex-sm-column-reverse-mine">
+                                            <div class="story_main-item-text story_main-item-text-left col-lg-6 col-sm-12 pr-lg-5 animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+                                                <h3 class="oliven-story-title mb-1">Lời tỏ tình ^^</h3>
+                                                <p class="oliven-story-date"> 20/10/2019</p>
+                                                <p>Hôm đấy là Chủ Nhật 20/10 thế là 2 đứa hẹn nhau đến khu vui chơi. Chơi cả ngày rất vui và cả 2 cũng chia sẻ với nhau rất nhiều điều...<br>
+        Buổi tối về xuống xe buýt xong là tụi mình tản bộ về nhà ga (phải bắt 1 chuyến tàu nữa), nhớ đoạn 2 đứa ngồi nghỉ chổ băng ghế dài, cạnh hàng cây, dưới ánh đèn đường...cũng lãng mạn lắm ^^!<br>
+        Không lúc nào thích hợp ngõ lời hơn lúc này.<br>
+        Lời tỏ tình cứ ấp a ấp úng, cơ rồi kể từ sau giây phút đấy cả 2 mở lòng cho nhau cơ hội tìm hiểu đối phương.</p>
+                                            </div>
+                                            <div class="story_main-item-img col-lg-6 col-sm-12 pl-lg-5">
+                                                <div class="story-img animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                                                    <div class="img"> <img src="https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/6792eb29a021a4241f03b73b176a1216.jpeg" class="img-fluid" alt=""> </div>
+                                                </div>
+                                                <i class="d-none d-lg-block story_main-item-img-right-heart couple_heading-icon fa fa-heart"></i>
+                                            </div>
+                                        </div>
+                                                                                                                        <div class="row story_main-item">
+                                            <div class="story_main-item-img col-lg-6 pr-lg-5">
+                                                <div class="story-img animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+                                                    <div class="img"> <img src="https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/a6c62c8bd8c5f8a20a481710ad8143b3.jpeg" class="img-fluid" alt=""> </div>
+                                                </div>
+                                                <i class="d-none d-lg-block story_main-item-img-left-heart couple_heading-icon fa fa-heart"></i>
+                                            </div>
+                                            <div class="story_main-item-text col-lg-6 pl-lg-5 animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+                                                <h3 class="oliven-story-title mb-1">Phút giây cầu hôn ❤️</h3>
+                                                <p class="oliven-story-date">2/1/2023</p>
+                                                <p>Nhân dịp nghỉ đông (ngay Tết Dương lịch) chúng mình quyết định đi trượt tuyết vì nghĩ bỏ lỡ chắc khó còn dịp nào đi được nữa.<br>
+        Chơi trượt các kiểu cũng mệt và lạnh rồi, đoạn 2 đứa đi bộ xuống từ đỉnh đồi phủ đầy tuyết trắng, trên tay mình cầm chiếc nhẫn đã lén chuẩn bị từ lâu. Không biết vì lạnh hay hồi hộp mà tay cứ run lên.<br>
+        4 năm không phải là quãng thời gian quá dài, nhưng đủ cho đối phương nhận ra được rất nhiều điều, biết cách yêu thương, chăm sóc, sẻ chia. Tuy có nhiều lần chúng mình bất đồng quan điểm vì phong tục vùng miền. Sau đấy chúng mình luôn ngồi lại tâm sự để cả 2 hiểu cho nhau. Cứ vậy tình yêu dần lớn cùng với sự trưởng thành &amp; tôn trọng, chấp nhận lẫn nhau.<br>
+        Giờ đây chúng mình tiếp tục cùng nhau sang trang mới, vun đắp cho gia đình nhỏ của cả 2 .<br>
+        Giây phút em nói: "Em đồng ý! "; anh đã nguyện ý đời này, đi đâu cũng được, miễn là cùng nhau.</p>
+                                            </div>
+                                        </div>
+                                                                                </div>
+                        </div>
+                    </div>
+                               
+                    
+                                
+        
+                    <div id="seeyou" class="seeyou section-padding bg-img" data-background="https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/templates/60d9d51ad8eec60dc9382e37/3c18da86bff0dd041ab2dbe1ce118ba4.jpg" style="background-image: url(&quot;https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/templates/60d9d51ad8eec60dc9382e37/3c18da86bff0dd041ab2dbe1ce118ba4.jpg&quot;);">
+                        <div class="container">
+                            <div class="row">
+                                <div class="section-head col-md-12 text-center"> 
+                                    <span><i class="ti-heart"></i></span>
+                                    <h4>一期一会 (Nhất kỳ nhất hội) </h4>
+                                    <h3>Một thời điểm, một cuộc gặp gỡ</h3> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                                <div id="gallery" class="section-padding" tabindex="-1">
+                        <div class="container">
+                            <div class="row text-center">
+                                <div class="col-md-12 mb-30">
+                                    <span class="oliven-title-meta">Our Wedding Gallery</span>
+                                    <h2 class="oliven-title">Album Hình Cưới</h2>
+                                </div>
+                            </div>
+                            <!-- <div class="row">
+                                <ul class="col list-unstyled list-inline mb-0 gallery-menu" id="gallery-filter">
+                                    <li class="list-inline-item"><a class="active" data-filter="*">All</a></li>
+                                    <li class="list-inline-item"><a class="" data-filter=".ceremony">Ceremony</a></li>
+                                    <li class="list-inline-item"><a class="" data-filter=".party">Party</a></li>
+                                </ul>
+                            </div> -->
+                        </div>
+                        <div class="container">
+                            <div class="row gallery-filter" style="position: relative; height: 565.78px;">
+                                                            <script type="text/javascript">
+                                        photoGalleries.push({
+                                            src : "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656325cc4f032d4031014ce0/large.jpg",
+                                            thumb: "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656325cc4f032d4031014ce0/small.jpg",
+                                            subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+                                        });
+                                    </script>
+                                    
+                                                                <div class="gallery-item col-md-4" style="position: absolute; left: 0px; top: 0px;">
+                                        <div class="mb-2 btn-see-more-gallery gallery-box" data-index="0">
+                                            <div class="gallery-img">
+                                                <img src="https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656325cc4f032d4031014ce0/small.jpg">
+                                            </div>
+                                            <div class="gallery-detail">
+                                                <h4 class="mb-0">Album hình cưới</h4> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                        <script type="text/javascript">
+                                        photoGalleries.push({
+                                            src : "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656039455c596226cd07d27f/large.jpg",
+                                            thumb: "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656039455c596226cd07d27f/small.jpg",
+                                            subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+                                        });
+                                    </script>
+                                    
+                                                                <div class="gallery-item col-md-4" style="position: absolute; left: 185px; top: 0px;">
+                                        <div class="mb-2 btn-see-more-gallery gallery-box" data-index="1">
+                                            <div class="gallery-img">
+                                                <img src="https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656039455c596226cd07d27f/small.jpg">
+                                            </div>
+                                            <div class="gallery-detail">
+                                                <h4 class="mb-0">Album hình cưới</h4> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                        <script type="text/javascript">
+                                        photoGalleries.push({
+                                            src : "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656038ea70f99e79f106069e/large.jpg",
+                                            thumb: "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656038ea70f99e79f106069e/small.jpg",
+                                            subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+                                        });
+                                    </script>
+                                    
+                                                                <div class="gallery-item col-md-4" style="position: absolute; left: 370px; top: 0px;">
+                                        <div class="mb-2 btn-see-more-gallery gallery-box" data-index="2">
+                                            <div class="gallery-img">
+                                                <img src="https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656038ea70f99e79f106069e/small.jpg">
+                                            </div>
+                                            <div class="gallery-detail">
+                                                <h4 class="mb-0">Album hình cưới</h4> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                        <script type="text/javascript">
+                                        photoGalleries.push({
+                                            src : "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656038e0e16ef6c02308e6c7/large.jpg",
+                                            thumb: "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656038e0e16ef6c02308e6c7/small.jpg",
+                                            subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+                                        });
+                                    </script>
+                                    
+                                                                <div class="gallery-item col-md-4" style="position: absolute; left: 0px; top: 141px;">
+                                        <div class="mb-2 btn-see-more-gallery gallery-box" data-index="3">
+                                            <div class="gallery-img">
+                                                <img src="https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656038e0e16ef6c02308e6c7/small.jpg">
+                                            </div>
+                                            <div class="gallery-detail">
+                                                <h4 class="mb-0">Album hình cưới</h4> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                        <script type="text/javascript">
+                                        photoGalleries.push({
+                                            src : "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656038d0c9d36d343403ecf0/large.jpg",
+                                            thumb: "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656038d0c9d36d343403ecf0/small.jpg",
+                                            subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+                                        });
+                                    </script>
+                                    
+                                                                <div class="gallery-item col-md-4" style="position: absolute; left: 185px; top: 141px;">
+                                        <div class="mb-2 btn-see-more-gallery gallery-box" data-index="4">
+                                            <div class="gallery-img">
+                                                <img src="https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656038d0c9d36d343403ecf0/small.jpg">
+                                            </div>
+                                            <div class="gallery-detail">
+                                                <h4 class="mb-0">Album hình cưới</h4> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                        <script type="text/javascript">
+                                        photoGalleries.push({
+                                            src : "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656038781a8e9552e507bbbc/large.jpg",
+                                            thumb: "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656038781a8e9552e507bbbc/small.jpg",
+                                            subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+                                        });
+                                    </script>
+                                    
+                                                                <div class="gallery-item col-md-4" style="position: absolute; left: 370px; top: 141px;">
+                                        <div class="mb-2 btn-see-more-gallery gallery-box" data-index="5">
+                                            <div class="gallery-img">
+                                                <img src="https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656038781a8e9552e507bbbc/small.jpg">
+                                            </div>
+                                            <div class="gallery-detail">
+                                                <h4 class="mb-0">Album hình cưới</h4> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                        <script type="text/javascript">
+                                        photoGalleries.push({
+                                            src : "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/6560383f5c596226cd07d27c/large.jpg",
+                                            thumb: "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/6560383f5c596226cd07d27c/small.jpg",
+                                            subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+                                        });
+                                    </script>
+                                    
+                                                                <div class="gallery-item col-md-4" style="position: absolute; left: 185px; top: 282px;">
+                                        <div class="mb-2 btn-see-more-gallery gallery-box" data-index="6">
+                                            <div class="gallery-img">
+                                                <img src="https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/6560383f5c596226cd07d27c/small.jpg">
+                                            </div>
+                                            <div class="gallery-detail">
+                                                <h4 class="mb-0">Album hình cưới</h4> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                        <script type="text/javascript">
+                                        photoGalleries.push({
+                                            src : "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656038385833c1c88b09259d/large.jpg",
+                                            thumb: "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656038385833c1c88b09259d/small.jpg",
+                                            subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+                                        });
+                                    </script>
+                                    
+                                                                <div class="gallery-item col-md-4" style="position: absolute; left: 370px; top: 282px;">
+                                        <div class="mb-2 btn-see-more-gallery gallery-box" data-index="7">
+                                            <div class="gallery-img">
+                                                <img src="https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656038385833c1c88b09259d/small.jpg">
+                                            </div>
+                                            <div class="gallery-detail">
+                                                <h4 class="mb-0">Album hình cưới</h4> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                        <script type="text/javascript">
+                                        photoGalleries.push({
+                                            src : "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656037dfc5f7cf9e0302c2c0/large.jpg",
+                                            thumb: "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656037dfc5f7cf9e0302c2c0/small.jpg",
+                                            subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+                                        });
+                                    </script>
+                                    
+                                                                <div class="gallery-item col-md-4" style="position: absolute; left: 0px; top: 286px;">
+                                        <div class="mb-2 btn-see-more-gallery gallery-box" data-index="8">
+                                            <div class="gallery-img">
+                                                <img src="https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656037dfc5f7cf9e0302c2c0/small.jpg">
+                                            </div>
+                                            <div class="gallery-detail">
+                                                <h4 class="mb-0">Album hình cưới</h4> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                        <script type="text/javascript">
+                                        photoGalleries.push({
+                                            src : "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656037d704a020b43f0f214d/large.jpg",
+                                            thumb: "https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656037d704a020b43f0f214d/small.jpg",
+                                            subHtml: `<div class="lg-sub-html"><h4></h4></div>`
+                                        });
+                                    </script>
+                                    
+                                                                <div class="gallery-item col-md-4" style="position: absolute; left: 370px; top: 424px;">
+                                        <div class="mb-2 btn-see-more-gallery gallery-box" data-index="9">
+                                            <div class="gallery-img">
+                                                <img src="https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/galleries/656037d704a020b43f0f214d/small.jpg">
+                                            </div>
+                                            <div class="gallery-detail">
+                                                <h4 class="mb-0">Album hình cưới</h4> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                                </div>
+                
+                                            </div>
+                    </div>
+                               
+                                <div id="whenwhere" class="whenwhere section-padding bg-pink">
+                        <div class="container">
+                            <div class="row text-center">
+                                <div class="col-md-12 mb-30">
+                                    <span class="oliven-title-meta title-in-background-color">Wedding Events</span>
+                                    <h2 class="oliven-title">Sự Kiện Cưới</h2> 
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                                                                                                                    
+                                                                                                                                                        
+                                                                                                        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1112px;"><div class="owl-item active" style="width: 526px; margin-right: 30px;"><div class="item">
+                                                    <div class="whenwhere-img"> <img src="https://cdn.biihappy.com/ziiweb/default/website/eee1cb36b560f0d80f513c4e9be666db.png" alt="LỄ CƯỚI NHÀ NAM"></div>
+                                                    <div class="content text-center">
+                                                        <h5>LỄ CƯỚI NHÀ NAM</h5>
+                                                        <p><i class="ti-location-pin"></i>Vũ Quý - Kiến Xương - Thái Bình</p>
+                                                        <p><i class="ti-time"></i> <span>09:00 31/12/2023</span></p>
+                                                        <div class="calendar-button">
+                                                            <div class="atcb-initialized" style="display: block;"><script type="application/ld+json">{
+        "@context":"https://schema.org",
+        "@type":"Event",
+        "name":"LỄ CƯỚI NHÀ NAM (Đám cưới Trung Hiếu và Thúy Hiền )",
+        "description":"Cảm ơn bạn đã dành thời gian tham dự đám cưới của chúng tôi!. Thông tin chi tiết xem tại website:
+        https://chuyen2chungminh.iwedding.info",
+        "startDate":"2023-12-31T09:00:00+07:00",
+        "duration":"00:00",
+        "location":"Vũ Quý - Kiến Xương - Thái Bình",
+        "endDate":"2023-12-31T09:00:00+07:00",
+        "image":[
+        "https://add-to-calendar-button.com/demo_assets/img/1x1.png",
+        "https://add-to-calendar-button.com/demo_assets/img/4x3.png",
+        "https://add-to-calendar-button.com/demo_assets/img/16x9.png"]
+        }</script><div class="atcb-button-wrapper atcb-light" style="--base-font-size-l: 16px; --base-font-size-m: 16px; --base-font-size-s: 16px;"><button class="atcb-button atcb-click" type="button" id="atcb-btn-1" fdprocessedid="ivc3ke"><span class="atcb-icon"><span class="atcb-icon-trigger"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200.016"><path d="M132.829 7.699c0-4.248 4.199-7.699 9.391-7.699s9.391 3.451 9.391 7.699v33.724c0 4.248-4.199 7.699-9.391 7.699s-9.391-3.451-9.391-7.699zm-5.941 123.747c2.979 0 5.404 2.425 5.404 5.404s-2.425 5.404-5.404 5.404l-21.077-.065-.065 21.045c0 2.979-2.425 5.404-5.404 5.404s-5.404-2.425-5.404-5.404l.065-21.061-21.045-.081c-2.979 0-5.404-2.425-5.404-5.404s2.425-5.404 5.404-5.404l21.061.065.065-21.045c0-2.979 2.425-5.404 5.404-5.404s5.404 2.425 5.404 5.404l-.065 21.077 21.061.065zM48.193 7.699C48.193 3.451 52.393 0 57.585 0s9.391 3.451 9.391 7.699v33.724c0 4.248-4.199 7.699-9.391 7.699s-9.391-3.451-9.391-7.699zM10.417 73.763h179.167V34.945c0-1.302-.537-2.49-1.4-3.369-.863-.863-2.051-1.4-3.369-1.4h-17.171c-2.881 0-5.208-2.327-5.208-5.208s2.327-5.208 5.208-5.208h17.171c4.183 0 7.975 1.709 10.726 4.46S200 30.762 200 34.945v44.043 105.843c0 4.183-1.709 7.975-4.46 10.726s-6.543 4.46-10.726 4.46H15.186c-4.183 0-7.975-1.709-10.726-4.46C1.709 192.79 0 188.997 0 184.814V78.988 34.945c0-4.183 1.709-7.975 4.46-10.726s6.543-4.46 10.726-4.46h18.343c2.881 0 5.208 2.327 5.208 5.208s-2.327 5.208-5.208 5.208H15.186c-1.302 0-2.49.537-3.369 1.4-.863.863-1.4 2.051-1.4 3.369zm179.167 10.433H10.417v100.618c0 1.302.537 2.49 1.4 3.369.863.863 2.051 1.4 3.369 1.4h169.629c1.302 0 2.49-.537 3.369-1.4.863-.863 1.4-2.051 1.4-3.369zM82.08 30.176c-2.881 0-5.208-2.327-5.208-5.208s2.327-5.208 5.208-5.208h34.977c2.881 0 5.208 2.327 5.208 5.208s-2.327 5.208-5.208 5.208z"></path></svg></span></span><span class="atcb-text">Thêm vào lịch</span><div class="atcb-dropdown-anchor"></div><div class="atcb-checkmark"><span class="atcb-icon-checkmark"><svg viewBox="0 0 122.88 122.87" xmlns="http://www.w3.org/2000/svg"><path fill:#39b54a;="" d="m33.666 50.046s6.0748-0.59297 17.413 4.2983c9.3883 4.5751 11.891 8.3955 11.891 8.3955 5.38-8.65 11.11-16.6 17.16-23.9 10.412-12.578 24.613-22.448 24.613-22.448l14.257-0.012228s-19.308 19.294-32.483 38.51c-13.175 19.216-22.877 41.21-22.877 41.21s-9.3948-18.164-14.53-24.53-10.77-11.59-17.52-16.22z" fill="#45b555"></path><path fill:#3c3c3c;="" d="m61.44 0c9.53 0 18.55 2.17 26.61 6.04-3.3 2.61-6.36 5.11-9.21 7.53-5.43-1.97-11.28-3.05-17.39-3.05-14.06 0-26.79 5.7-36 14.92s-14.92 21.94-14.92 36 5.7 26.78 14.92 36 21.94 14.92 36 14.92 26.79-5.7 36-14.92c9.22-9.22 14.91-21.94 14.91-36 0-3.34-0.32-6.62-0.94-9.78 2.64-3.44 5.35-6.88 8.11-10.28 2.17 6.28 3.35 13.04 3.35 20.06 0 16.96-6.88 32.33-17.99 43.44-11.12 11.12-26.48 18-43.44 18s-32.32-6.88-43.44-18c-11.13-11.12-18.01-26.48-18.01-43.44 0-16.97 6.88-32.33 17.99-43.44 11.12-11.12 26.48-18 43.45-18z"></path></svg></span></div></button></div></div>
+                                                        </div>
+                                                        <a style="width:80%;" href="https://www.google.com/search?client=ms-android-samsung-gs-rev1&amp;sca_esv=584961557&amp;sxsrf=AM9HkKnCz1vUxThDeKOdvMvKiyXEn4IGYA:1700797526905&amp;q=Mediamart+Ki%E1%BA%BFn+X%C6%B0%C6%A1ng&amp;ludocid=1040190843540164182&amp;ibp=gwp;0,7&amp;lsig=AB86z5UXMF8GhdZgfblJI7dOjEDz&amp;kgs=03743d0c88232c99&amp;shndl=-1&amp;shem=lsp&amp;source=sh/x/loc/act/m1/2" class="btn btn-danger p-2 px-2" target="_blank">Xem bản đồ <i class="fa fa-angle-right"></i></a>
+                                                    </div>
+                                                </div></div><div class="owl-item" style="width: 526px; margin-right: 30px;"><div class="item">
+                                                    <div class="whenwhere-img"> <img src="https://cdn.biihappy.com/ziiweb/default/website/21b07b7d583692f49091b87facbf2c92.png" alt="TIỆC CƯỚI NHÀ NAM"></div>
+                                                    <div class="content text-center">
+                                                        <h5>TIỆC CƯỚI NHÀ NAM</h5>
+                                                        <p><i class="ti-location-pin"></i>Vũ Quý - Kiến Xương - Thái Bình</p>
+                                                        <p><i class="ti-time"></i> <span>09:30 31/12/2023</span></p>
+                                                        <div class="calendar-button">
+                                                            <div class="atcb-initialized" style="display: block;"><script type="application/ld+json">{
+        "@context":"https://schema.org",
+        "@type":"Event",
+        "name":"TIỆC CƯỚI NHÀ NAM (Đám cưới Trung Hiếu và Thúy Hiền )",
+        "description":"Cảm ơn bạn đã dành thời gian tham dự đám cưới của chúng tôi!. Thông tin chi tiết xem tại website:
+        https://chuyen2chungminh.iwedding.info",
+        "startDate":"2023-12-31T09:30:00+07:00",
+        "duration":"00:00",
+        "location":"Vũ Quý - Kiến Xương - Thái Bình",
+        "endDate":"2023-12-31T09:30:00+07:00",
+        "image":[
+        "https://add-to-calendar-button.com/demo_assets/img/1x1.png",
+        "https://add-to-calendar-button.com/demo_assets/img/4x3.png",
+        "https://add-to-calendar-button.com/demo_assets/img/16x9.png"]
+        }</script><div class="atcb-button-wrapper atcb-light" style="--base-font-size-l: 16px; --base-font-size-m: 16px; --base-font-size-s: 16px;"><button class="atcb-button atcb-click" type="button" id="atcb-btn-2" fdprocessedid="2dyqn9"><span class="atcb-icon"><span class="atcb-icon-trigger"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200.016"><path d="M132.829 7.699c0-4.248 4.199-7.699 9.391-7.699s9.391 3.451 9.391 7.699v33.724c0 4.248-4.199 7.699-9.391 7.699s-9.391-3.451-9.391-7.699zm-5.941 123.747c2.979 0 5.404 2.425 5.404 5.404s-2.425 5.404-5.404 5.404l-21.077-.065-.065 21.045c0 2.979-2.425 5.404-5.404 5.404s-5.404-2.425-5.404-5.404l.065-21.061-21.045-.081c-2.979 0-5.404-2.425-5.404-5.404s2.425-5.404 5.404-5.404l21.061.065.065-21.045c0-2.979 2.425-5.404 5.404-5.404s5.404 2.425 5.404 5.404l-.065 21.077 21.061.065zM48.193 7.699C48.193 3.451 52.393 0 57.585 0s9.391 3.451 9.391 7.699v33.724c0 4.248-4.199 7.699-9.391 7.699s-9.391-3.451-9.391-7.699zM10.417 73.763h179.167V34.945c0-1.302-.537-2.49-1.4-3.369-.863-.863-2.051-1.4-3.369-1.4h-17.171c-2.881 0-5.208-2.327-5.208-5.208s2.327-5.208 5.208-5.208h17.171c4.183 0 7.975 1.709 10.726 4.46S200 30.762 200 34.945v44.043 105.843c0 4.183-1.709 7.975-4.46 10.726s-6.543 4.46-10.726 4.46H15.186c-4.183 0-7.975-1.709-10.726-4.46C1.709 192.79 0 188.997 0 184.814V78.988 34.945c0-4.183 1.709-7.975 4.46-10.726s6.543-4.46 10.726-4.46h18.343c2.881 0 5.208 2.327 5.208 5.208s-2.327 5.208-5.208 5.208H15.186c-1.302 0-2.49.537-3.369 1.4-.863.863-1.4 2.051-1.4 3.369zm179.167 10.433H10.417v100.618c0 1.302.537 2.49 1.4 3.369.863.863 2.051 1.4 3.369 1.4h169.629c1.302 0 2.49-.537 3.369-1.4.863-.863 1.4-2.051 1.4-3.369zM82.08 30.176c-2.881 0-5.208-2.327-5.208-5.208s2.327-5.208 5.208-5.208h34.977c2.881 0 5.208 2.327 5.208 5.208s-2.327 5.208-5.208 5.208z"></path></svg></span></span><span class="atcb-text">Thêm vào lịch</span><div class="atcb-dropdown-anchor"></div><div class="atcb-checkmark"><span class="atcb-icon-checkmark"><svg viewBox="0 0 122.88 122.87" xmlns="http://www.w3.org/2000/svg"><path fill:#39b54a;="" d="m33.666 50.046s6.0748-0.59297 17.413 4.2983c9.3883 4.5751 11.891 8.3955 11.891 8.3955 5.38-8.65 11.11-16.6 17.16-23.9 10.412-12.578 24.613-22.448 24.613-22.448l14.257-0.012228s-19.308 19.294-32.483 38.51c-13.175 19.216-22.877 41.21-22.877 41.21s-9.3948-18.164-14.53-24.53-10.77-11.59-17.52-16.22z" fill="#45b555"></path><path fill:#3c3c3c;="" d="m61.44 0c9.53 0 18.55 2.17 26.61 6.04-3.3 2.61-6.36 5.11-9.21 7.53-5.43-1.97-11.28-3.05-17.39-3.05-14.06 0-26.79 5.7-36 14.92s-14.92 21.94-14.92 36 5.7 26.78 14.92 36 21.94 14.92 36 14.92 26.79-5.7 36-14.92c9.22-9.22 14.91-21.94 14.91-36 0-3.34-0.32-6.62-0.94-9.78 2.64-3.44 5.35-6.88 8.11-10.28 2.17 6.28 3.35 13.04 3.35 20.06 0 16.96-6.88 32.33-17.99 43.44-11.12 11.12-26.48 18-43.44 18s-32.32-6.88-43.44-18c-11.13-11.12-18.01-26.48-18.01-43.44 0-16.97 6.88-32.33 17.99-43.44 11.12-11.12 26.48-18 43.45-18z"></path></svg></span></div></button></div></div>
+                                                        </div>
+                                                        <a style="width:80%;" href="https://www.google.com/search?client=ms-android-samsung-gs-rev1&amp;sca_esv=584961557&amp;sxsrf=AM9HkKnCz1vUxThDeKOdvMvKiyXEn4IGYA:1700797526905&amp;q=Mediamart+Ki%E1%BA%BFn+X%C6%B0%C6%A1ng&amp;ludocid=1040190843540164182&amp;ibp=gwp;0,7&amp;lsig=AB86z5UXMF8GhdZgfblJI7dOjEDz&amp;kgs=03743d0c88232c99&amp;shndl=-1&amp;shem=lsp&amp;source=sh/x/loc/act/m1/2" class="btn btn-danger p-2 px-2" target="_blank">Xem bản đồ <i class="fa fa-angle-right"></i></a>
+                                                    </div>
+                                                </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev">prev</div><div class="owl-next">next</div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                                <div id="rsvp" class="section-padding bg-img" data-background="https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/templates/60d9d51ad8eec60dc9382e37/79798423d1de4916dcbd785ee5d5fa5c.jpg" style="background-image: url(&quot;https://cdn.biihappy.com/ziiweb/website/65602eef6edb4087940af23c/templates/60d9d51ad8eec60dc9382e37/79798423d1de4916dcbd785ee5d5fa5c.jpg&quot;);">
+                        <div class="container">
+                            <div class="row justify-content-center" style="background-color: rgb(255 255 255 / 60%);">
+                                <div class="col-12">
+                                    <span class="oliven-title-meta text-center">Wishes from friends</span>
+                                    <h2 class="oliven-title text-center">Sổ Lưu Bút</h2>
+                                </div>
+                                <div class="col-md-6 p-40">
+                                    <br>
+                                    <form id="wish-form" class="form validate-rsvp-form row" method="post" novalidate="novalidate">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" name="name" class="form-control error" placeholder="Nhập họ tên*" fdprocessedid="q0711j" aria-required="true" aria-invalid="true"><label id="name-error" class="error" for="name">Vui lòng nhập tên của bạn.</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="email" name="email" class="form-control valid" placeholder="Nhập email" fdprocessedid="viac64">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group nessage-text position-relative textarea-emoji-picker">
+                                                <div class="vitualTextarea">
+                                                    <textarea id="content" name="content" placeholder="Nhập lời chúc của bạn*" rows="3" aria-required="true" class="error"></textarea>
+                                                    <div class="textAreaIcons">
+                                                        <span class="show-autocomplete tooltip-custom" >
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+                                                              <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"></path>
+                                                            </svg>
+                                                            <span class="tooltiptext">Lời chúc gợi ý</span>
+                                                        </span>
+                                                        <span class="hide-autocomplete tooltip-custom" style="display: none;">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-lightbulb-off" viewBox="0 0 16 16">
+                                                              <path fill-rule="evenodd" d="M2.23 4.35A6 6 0 0 0 2 6c0 1.691.7 3.22 1.826 4.31.203.196.359.4.453.619l.762 1.769A.5.5 0 0 0 5.5 13a.5.5 0 0 0 0 1 .5.5 0 0 0 0 1l.224.447a1 1 0 0 0 .894.553h2.764a1 1 0 0 0 .894-.553L10.5 15a.5.5 0 0 0 0-1 .5.5 0 0 0 0-1 .5.5 0 0 0 .288-.091L9.878 12H5.83l-.632-1.467a3 3 0 0 0-.676-.941 4.98 4.98 0 0 1-1.455-4.405zm1.588-2.653.708.707a5 5 0 0 1 7.07 7.07l.707.707a6 6 0 0 0-8.484-8.484zm-2.172-.051a.5.5 0 0 1 .708 0l12 12a.5.5 0 0 1-.708.708l-12-12a.5.5 0 0 1 0-.708"></path>
+                                                            </svg>
+                                                            <span class="tooltiptext">Lời chúc gợi ý</span>
+                                                        </span>
+                                                        <span class="emoji-picker-button tooltip-custom">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                                                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path>
+                                                              <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5"></path>
+                                                            </svg>
+                                                            <span class="tooltiptext">Chèn biểu tượng</span>
+                                                        </span>
+                                                        <div class="wishes-autocomplete-content" style="display: none;">
+                                                            <input type="text" id="searchWishSuggestions" onkeyup="searchWishSuggestionsFunction()" placeholder="Tìm kiếm..." fdprocessedid="hwibzv">
+                                                            <ul id="wishSuggestions">
+                                                                                                                        <li><a class="showContent" href="#">Chúc mừng hạnh phúc! Chúc hai bạn trăm năm hạnh phúc!</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Chúc mừng ngày trọng đại tới hai bạn. Hạnh phúc bền lâu và trọn vẹn nhé!</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Chúc mừng hạnh phúc hai bạn. Chúc hai bạn bên nhau đầu bạc răng long, sớm có thiên thần nhỏ nhé!</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Chúc hai bạn ngày vui hạnh phúc. Hãy yêu thương nhau thật nhiều và sống thật hạnh phúc nha!</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Chúc hai bạn sớm có con đàn cháu đống, cửa nhà lúc nào cũng đầm ấm, yên vui nhé!</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Thật vui vì cuối cùng ngày này cũng tới với bạn. Tôi thành tâm chúc hai bạn thật nhiều hạnh phúc và sống đời vui vẻ cùng nhau mãi mãi!</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Một chương mới đã mở ra với hai bạn rồi. Tôi mong cuộc sống mới của cả hai sẽ tràn ngập hy vọng, hạnh phúc và niềm vui!</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Chúc đôi trai tài gái sắc hạnh phúc trọn vẹn, luôn yêu thương nhau thật nhiều!</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Chia vui cùng bạn trong ngày trọng đại này. Cầu mong cuộc sống sau này của 2 vợ chồng thật thuận hòa, may mắn, làm ăn phát tài nha.</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Tôi mong tình yêu của hai bạn thật bền chặt, gắn bó để xây dựng tổ ấm yên bình, hạnh phúc!</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Hai bạn của tôi chắc chắn sẽ có được nhiều hạnh phúc. Mong hai bạn có sức khỏe dồi dào, làm ăn phát đạt và sớm có cháu cho ông bà bồng bế nhé!</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Gửi lời chúc mừng chân thành nhất tới bạn của tôi. Chúc hai bạn một cuộc sống thật tuyệt vời, hòa thuận, gắn bó son sắt, thủy chung, hạnh phúc lâu dài.</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Nơi nào có yêu thương nơi đó chắc chắn hạnh phúc. Hai bạn đã tìm được nơi đủ đầy yêu thương rồi, hãy cùng nắm tay nhau đi hết cuộc đời nhé!</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Khởi đầu một cuộc sống mới, nguyện ước cho bạn của tôi những ngày tháng hạnh phúc phía trước để cùng xây dựng tổ ấm với người bạn đời. Happy ending!</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Mình tin rằng đây sẽ là khởi đầu cho những điều tốt đẹp sắp tới trong cuộc sống của hai bạn. Hãy yêu thương và cùng nhau vượt qua mọi khó khăn trong cuộc sống nhé.</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Hôn nhân đánh dấu sự kết thúc một câu chuyện tình yêu và bắt đầu một trận đấu vật. Chúc bạn những điều tốt đẹp nhất.</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Tôi sẽ nói cho bạn bí mật của một cuộc hôn nhân hạnh phúc. Đó vẫn là … một bí mật cho tất cả! Chúc bạn tất cả những điều tốt đẹp nhất của thời gian phía trước.</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Hôn nhân thật đẹp. Cuối cùng bạn đã tìm thấy một người mà bạn bị làm phiền suốt cuộc đời.</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Hai trở thành một: Một giường, một điều khiển từ xa, một phòng tắm! Xin chúc mừng đám cưới hai bạn.</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Chúc đôi trai tài gái sắc nhà mình hạnh phúc vẹn tròn, cung hỷ cung hỷ!</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Chúc mừng anh trai của em đã có người rước nhé. Em mong anh chị có cuộc sống vui vẻ, hạnh phúc phía trước, làm ăn phát tài phát lộc.</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Anh chị là một cặp trời sinh, chắc chắn sau này sẽ rất hạnh phúc. Em chúc anh chị sức khỏe dồi dào, làm ăn phát đạt và sớm có thiên thần nhỏ cho vui cửa vui nhà.</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Hôm nay là ngày vui của anh chị và cũng là ngày em rất hạnh phúc. Chúc anh chị mãi yêu thương nhau như bây giờ và đạt được mọi ước nguyện trong cuộc sống.</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Chúc anh/chị/em trăm năm hạnh phúc, thuận vợ thuận chồng.</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Hôm nay chú rể đẹp trai, cô dâu xinh gái. Chúc mừng ngày thành hôn hai bạn tôi!</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Chúc mừng đôi bạn trẻ nhé! Mãi yêu thương nhau đến đầu bạc răng long bạn nha!</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Thay mặt team (tên nhóm) chúc hai bạn ngày ngày ân ái, bên nhau trọn đời.</a></li>
+                                                                                                                        <li><a class="showContent" href="#">Happy wedding! Chúc hai bạn có cuộc sống mới ngập tràn tiếng cười và niềm vui, sớm có thiên thần nhỏ bồng bé!</a></li>
+                                                                                                                    </ul>
+                                                        </div>
+                                                    </div>
+                                                </div><label id="content-error" class="error" for="content">Vui lòng nhập lời chúc.</label>
+                                                
+                                                <div class="emoji-picker" style="display: none;">
+                                                    <emoji-picker style="max-width: 100%;" class="light"></emoji-picker>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 text-center">
+                                            <div class="form-group">
+                                                <input type="submit" class="btn buttono" value="GỬI LỜI CHÚC" fdprocessedid="q4fx5"> 
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6 p-40">
+                                    <div class="wish-box">
+                                                                        <div class="wish-box-item ">
+                                            <strong>Hoàng Thu Phương</strong>
+                                            <p>Chúc bạn Hoàng A3 mãi mãi hạnh phúc luôn đồng hành cùng nhau trong chặng đường phía trước nhá bạn tôi😘</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item bg">
+                                            <strong>E phươngg mít</strong>
+                                            <p>Chúc anh chị trăm năm hạnh phúc sớm có tin vui nhé ❤️❤️❤️</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item ">
+                                            <strong>C long</strong>
+                                            <p>Chú chúc 2 cháu trăm năm HP</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item bg">
+                                            <strong>Cô Nhưng Cung</strong>
+                                            <p>Chúc hai cháu trăm năm hạnh phúc, thành công🎉🎉</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item ">
+                                            <strong>Mai Thị Huyền</strong>
+                                            <p>Chúc hai cháu trăm năm hạnh phúc.</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item bg">
+                                            <strong>A chị sửu Huệ</strong>
+                                            <p>Chúc hai e trăm năm hạnh phúc</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item ">
+                                            <strong>Trần Thanh Huyền</strong>
+                                            <p>Chúc hai cháu trăm năm hạnh phúc ❤❤❤🎉🎉🎉🎉🎉</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item bg">
+                                            <strong>Trần Trung Lượng</strong>
+                                            <p>Chúc hai cháu trăm năm hạnh phúc</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item ">
+                                            <strong>Vũ Quốc Tuấn</strong>
+                                            <p>Bác chúc các cháu trăm năm hạnh phúc</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item bg">
+                                            <strong>Anh Hậu</strong>
+                                            <p>Chúc mừng 2 vợ chồng,sớm sinh quý tử 😁</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item ">
+                                            <strong>Cô Phương bạn mẹ Nhưng ở Nha Trang Nha Trang</strong>
+                                            <p>Bộ ảnh cưới tuyệt vời ❤️🌹. Cô chúc 2 con mãi hạnh phúc ❤️❤️</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item bg">
+                                            <strong>Phạm thị kim Dung</strong>
+                                            <p>Cô Dung Hải Phòng là bạn cùng học lớp 26bd với mẹ Nhung, chúc hai con nhiều sức khoẻ, hạnh phúc và thành công!</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item ">
+                                            <strong>Ngô Khánh Toàn</strong>
+                                            <p>Chúc phúc Hau cháu luôn mạnh khỏe, hạnh phúc bên nhau, vượt qua thử thách trong cuộc sống để đi đến viên mãn đầu bạc răng Long!!!</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item bg">
+                                            <strong>Đỗ Thị Thắm</strong>
+                                            <p>Chúc các con luôn hạnh phúc, viên mãn và luôn nắm tay nhau vượt qua mọi khó khăn trong cuộc sống.</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item ">
+                                            <strong>Cự Giải</strong>
+                                            <p>Ôi lãng mạn quá. Chúc cho câu chuyện tình yêu của anh chị viên mãn đến răng long đầu bạc ❤️</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item bg">
+                                            <strong>Jihoo</strong>
+                                            <p>Không mong những chuyện xa vời, chỉ cầu hạnh phúc trọn đời bên nhau. Mãi Yêu!!!</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item ">
+                                            <strong>Lee Lee</strong>
+                                            <p>Chúc anh chị hạnh phúc viên mãn, cứ yêu nhau hoài như thuở đầu nhé!</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item bg">
+                                            <strong>Chị Bích</strong>
+                                            <p>K về tham dự ngày trọng đại của 2 đứa đc nhưng c rất xúc động khi đọc những dòng tâm sự Diễm đã viết ở đây, chúc mừng 2 đứa đã tìm thấy nhau giữa thế giới bao la rộng lớn này. Hãy luôn trân trọng và yêu thương nhau đến mãi về sau nhé!</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item ">
+                                            <strong>Trần thị Kim Tuyến</strong>
+                                            <p>Dì Tuyến thương chúc hai cháu Diễm &amp; Hoàng cùng bên nhau đến suốt cuộc đời trong yêu thương tha thứ và hạnh phúc! 💐💝💝🎉</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item bg">
+                                            <strong>HoThiDiemSuong</strong>
+                                            <p>Chúc vợ chồng chị trăm năm hạnh phúc. Lúc nào cũng bên cạnh nhau, yêu thương nhau đến già❤️</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item ">
+                                            <strong>Trần sơn</strong>
+                                            <p>Ảnh cưới đẹp quá .chúc 2 bạn trăm năm hạnh phúc</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item bg">
+                                            <strong>Huyền Anh</strong>
+                                            <p>Lãng mạn quá😍😍😍Chúc anh chị trăm năm hạnh phúc ❤❤❤</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item ">
+                                            <strong>Mai Trang</strong>
+                                            <p>Dễ thương quá 🥰 em chúc mừng anh chị nha 👩‍❤️‍👨</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item bg">
+                                            <strong>Mỹ Linh</strong>
+                                            <p>Chúc Dì Dượng trăm năm hạnh phúc, hạnh phúc viên mãn, sớm sinh quý tử ạ 🥰🥰🥰🥰</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item ">
+                                            <strong>Nguyễn Thị Ngọc Hân</strong>
+                                            <p>Chúc vk ck diễm trăm năm hạnh phúc, gặp nhiều may mắn lúc nào cũng vui vẻ yêu thương nhau , cùng nhau xây đắp gia đình hạnh phúc nhé ❤️❤️❤️❤️❤️</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item bg">
+                                            <strong>Hà Cẩm Lợi</strong>
+                                            <p>Chúc cho cô dâu Diễm Diễm, chú rể Đức Hoàng trăm năm hạnh phúc, thủy chung trọn vẹn, đi về có nhau, dù sống đến tuổi răng long đầu bạc nhưng xem nhau như những ngày mới gặp nhé. Happy Wedding!👫👫</p>
+                                                                            </div>
+                                                                        <div class="wish-box-item ">
+                                            <strong>CEO của Biihappy</strong>
+                                            <p>"Một cuộc hôn nhân thành công đòi hỏi phải yêu nhiều lần, và luôn ở cùng một người" - Chúc cho hai bạn sẽ có được một cuộc hôn nhân viên mãn, trăm năm hạnh phúc!</p>
+                                                                            </div>
+                                                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                <!-- Footer -->
+                    <div class="footer2">
+                        <div class="oliven-narrow-content">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h2>
+                                        <a href="#home">
+                                            <div class="lds-heart"><div></div></div>
+                                            <span>Đức Hoàng <small>&amp;</small> Kiều Diễm </span>
+                                        </a>
+                                    </h2>
+                                    <p class="copyright title-in-background-color mb-0">Save the date 31-12-2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="donate-modal" class="donate-modal">
+                        <div class="donate-modal-content">
+                            <div class="donate-modal-header">
+                                <span class="donate-modal-close">×</span>
+                                <strong>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+                                      <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"></path>
+                                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                      <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"></path>
+                                    </svg> 
+                                    <span>Hộp mừng cưới</span>
+                                </strong>
+                            </div>
+                            <div class="donate-modal-body">
+                                <div class="donate-box">
+                                                                                        </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                                <div id="menu-access" class="" style="bottom: 278px;">
+                        <div class="btn-menu-open" style="display: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path>
+                            </svg>
+                        </div>
+                        <div class="btn-menu-close" style="display: block;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"></path>
+                            </svg>
+                        </div>
+                        <ul class="p-0 m-0 list-menu-icon" style="opacity: 1;">
+                                                <li class="text-center shake">
+                                <a href="#rsvp" class="text-white">
+                                    <span class="content-button tooltipBtn">
+                                        <span class="tooltiptext" style="visibility: visible;">Gửi lời chúc</span>
+                                        <img class="access-icon" src="https://cdn.biihappy.com/ziiweb/images/static/common/wishes.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                                    
+                                                <li class="text-center">
+                                <a href="https://chuyen2chungminh.iwedding.info/rsvp" target="_blank" class="text-white">
+                                    <span class="content-button tooltipBtn">
+                                        <span class="tooltiptext">Xác nhận tham dự</span>
+                                        <img class="access-icon" src="https://cdn.biihappy.com/ziiweb/images/static/common/rsvp4.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                                    
+                                            </ul>
+                    </div>
+                               
+                    <script type="text/javascript">
+                        const biicore = {template_id: '60d9d51ad8eec60dc9382e37', templatePremium: ('0' === '1'), themeRoot:'https://chuyen2chungminh.iwedding.info/templates/template1', webroot : 'https://chuyen2chungminh.iwedding.info', coreSite: 'https://biihappy.com', webToken: '65602eef6edb4087940af23c', isPremium: ('' === '1'), bgMusic: 'https://cdn.biihappy.com/ziiweb/wedding-musics/IDo-911.mp3', alert: JSON.parse('[]'), effect: JSON.parse('{\"type\":\"heart\"}')};
+                    </script>
+                    <script src="https://chuyen2chungminh.iwedding.info/common/bii.js?v=202402211"></script>
+            <style type="text/css">
+            .mouse-scroll-on-mobile{display:none;}
+            @media screen and (max-width: 576px){
+                .mouse-scroll-on-mobile{width:95px;height:30px;margin:0 0 0 -30px;position:fixed;right:calc(50% - 52px);bottom:80px;-webkit-animation:arrow .5s 1s infinite ease-in-out alternate;z-index:999;display:block!important;visibility:hidden}
+                .mouse-scroll-on-mobile:hover{-webkit-animation-play-state:paused}
+                .mouse-scroll-on-mobile .mouse-scroll-on-mobile-text{text-align:center;bottom:120px;position:absolute;left:1px;background:#fff;padding:5px 10px;border-radius:3px;font-size:15px;color: #000;}
+                .mouse-scroll-on-mobile .mouse-scroll-on-mobile-left{position:absolute;height:5px;width:30px;background:#de4659;-webkit-transform:rotate(240deg);bottom:80px;left:42px;-webkit-border-radius:4px;-webkit-transform-origin:5px 50%;-webkit-animation:leftArrow .5s 1s infinite ease-out alternate}
+                .mouse-scroll-on-mobile .mouse-scroll-on-mobile-right{position:absolute;height:5px;width:30px;background:#de4659;-webkit-transform:rotate(-60deg);bottom:80px;left:46px;-webkit-border-radius:4px;-webkit-transform-origin:5px 50%;-webkit-animation:rightArrow .5s 1s infinite ease-out alternate}}
+                @-webkit-keyframes arrow{0%{bottom:0}100%{bottom:40px}}
+                @-webkit-keyframes leftArrow{100%{-webkit-transform:rotate(225deg)}}
+                @-webkit-keyframes rightArrow{100%{-webkit-transform:rotate(-45deg)}}
+            @media (max-width: 799px){#menu-access{bottom: 238px!important;}}</style>
+            <div class="mouse-scroll-on-mobile" style="visibility: hidden;">
+                <div class="mouse-scroll-on-mobile-text">Kéo xuống</div>
+                <div class="mouse-scroll-on-mobile-left"></div>
+                <div class="mouse-scroll-on-mobile-right"></div>
+            </div>
+        
+            
+            <style type="text/css">
+            @-webkit-keyframes biilogo-pulse {
+              from {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+              }
+              50% {
+                -webkit-transform: scale3d(0.95, 0.95, 0.95);
+                transform: scale3d(0.95, 0.95, 0.95);
+              }
+              to {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+              }
+            }
+            
+            @keyframes biilogo-pulse {
+              from {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+              }
+              50% {
+                -webkit-transform: scale3d(0.95, 0.95, 0.95);
+                transform: scale3d(0.95, 0.95, 0.95);
+              }
+              to {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+              }
+            }
+            .bii-player{position: fixed;bottom: 70px;left: 50px;width: 40px;height: 40px;z-index:99999;display:none;}
+            .bii-player .playerIcon{cursor:pointer;display: block;width:40px;height:40px;-webkit-border-radius: 50%;-moz-border-radius: 50%;-o-border-radius: 50%;-ms-border-radius: 50%;border-radius: 50%;background-color: #df4758;padding-top: 7px;padding-left: 9px;position:absolute;z-index: 2;}
+            .bii-player:after{content: "";position: absolute;-webkit-border-radius: 50%;-moz-border-radius: 50%;-o-border-radius: 50%;-ms-border-radius: 50%;border-radius: 50%;z-index: -1;background-color: rgba(242, 59, 67, 0.3);width: 120%;height: 120%;left: -10%;top: -10%;-webkit-animation: biilogo-pulse 1s infinite;animation: biilogo-pulse 1s infinite;z-index: 1;}
+            .bii-player img{width: 100%;z-index: 99999;position: absolute;cursor:pointer;}
+            .bii-player.show-sec .bii-player-secondary{visibility: visible;}
+            .bii-player.show-sec .bii-player-secondary-content{ transform: translate3d(0, 0, 0);}
+            .bii-player-secondary{position: absolute;width: 310px;left: 25px;height: 50px;overflow: hidden;visibility: hidden;}
+            .bii-player-secondary-content{display: flex;align-items: center;cursor:pointer;user-select: none;position: absolute;width: 310px;left: -25px;background: #fff;height: 40px;padding: 8px 11px 8px 50px;border: 1px solid #df4759;border-radius: 30px;z-index: 1;font-size:14px;transform: translate3d(-100%, 0, 0);transition: transform 175ms ease;font-family: arial;font-weight: 200;color: #000;}
+            @media (max-width: 799px) {
+              .bii-player{bottom: 30px;left: 20px;}
+            }
+            </style>
+            <div class="bii-player" style="display: block;">
+                <div onclick="playPause();" class="bii-player-secondary"><div class="bii-player-secondary-content">Click vào đây nếu bạn muốn phát nhạc!</div></div>
+                <div onclick="playPause();" class="playerIcon">
+                    <span id="playerVolumeOff" style="display: block;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="27" fill="#fff" class="bi bi-volume-mute-fill" viewBox="0 0 16 16">
+                          <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"></path>
+                        </svg>
+                    </span>
+                    <span style="display: none;" id="playerVolumeOn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="27" fill="#fff" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                          <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"></path>
+                          <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"></path>
+                          <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"></path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            
+            <style type="text/css">
+            @-webkit-keyframes biilogo-pulse {
+              from {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+              }
+              50% {
+                -webkit-transform: scale3d(0.95, 0.95, 0.95);
+                transform: scale3d(0.95, 0.95, 0.95);
+              }
+              to {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+              }
+            }
+            
+            @keyframes biilogo-pulse {
+              from {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+              }
+              50% {
+                -webkit-transform: scale3d(0.95, 0.95, 0.95);
+                transform: scale3d(0.95, 0.95, 0.95);
+              }
+              to {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+              }
+            }
+            .bii-logo{position: fixed;bottom: 70px;right: 50px;width: 40px;height: 40px;z-index:99998;}
+            .bii-logo a{display: block;}
+            .bii-logo:before{content: "";position: absolute;-webkit-border-radius: 50%;-moz-border-radius: 50%;-o-border-radius: 50%;-ms-border-radius: 50%;border-radius: 50%;z-index: -1;background-color: rgba(242, 59, 67, 0.3);width: 120%;height: 120%;left: -10%;top: -10%;-webkit-animation: biilogo-pulse 1s infinite;animation: biilogo-pulse 1s infinite;z-index: 1;}
+            .bii-logo img{width: 100%;z-index: 99999;position: absolute;cursor:pointer;}
+            .bii-logo:hover .bii-logo-secondary{visibility: visible;}
+            .bii-logo:hover .bii-logo-secondary-content{ transform: translate3d(0, 0, 0);}
+            .bii-logo.show-sec .bii-logo-secondary{visibility: visible;}
+            .bii-logo.show-sec .bii-logo-secondary-content{ transform: translate3d(0, 0, 0);}
+            
+            .bii-logo-secondary{position: absolute;width: 320px;right: 25px;height: 40px;overflow: hidden;visibility: hidden;}
+            .bii-logo-secondary-content{display: flex;align-items: center;position: absolute;width: 320px;right: -25px;background: #fff;height: 40px;padding: 8px 40px 8px 11px;border: 1px solid #df4759;border-radius: 30px;z-index: 9999;font-size:14px;transform: translate3d(100%, 0, 0);transition: transform 175ms ease;font-family: arial;font-weight: 200;color: #000;}
+            .bii-footer .show-desktop{display: inline-block;}
+            .bii-footer .show-mobile{display: none;}
+            @media (max-width: 799px) {
+              .bii-logo{bottom: 30px;right: 20px;}
+              .bii-footer .show-desktop{display: none;}
+              .bii-footer .show-mobile{display: inline-block;}
+            }
+            </style>
+            <div class="bii-logo"><div class="bii-logo-secondary"><div class="bii-logo-secondary-content">Nền tảng tạo Website đám cưới miễn phí!</div></div><a href="https://biihappy.com/wedding" target="_blank"><img src="https://chuyen2chungminh.iwedding.info/common/imgs/bii.png?v=20210131"></a></div>
+            <div class="bii-footer" style="z-index:9999;background-color: #000;border-top: 1px solid #df4759;color: #fff;text-align: center;letter-spacing: 1px;bottom: 0;width: 100%;font-size: 15px;">
+                <div class="container">
+                    <a style="color: #fff;padding: 10px 0 13px;display: flex;align-items: center;justify-content: center;" href="https://biihappy.com/iwedding" target="_blank">
+                        <span style="margin-right: 5px;"><img width="30" src="https://chuyen2chungminh.iwedding.info/common/imgs/bii.png?v=20210131" style="border: 1px solid #fff;border-radius: 50%;width:30px!important;margin-right:5px;"> IWedding</span> | <span class="show-desktop" style="margin-left: 5px;">Nền tảng tạo website đám cưới miễn phí từ Biihappy</span><span class="show-mobile">Tạo website đám cưới miễn phí</span>
+                        <span style="line-height: 15px;vertical-align: middle;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
