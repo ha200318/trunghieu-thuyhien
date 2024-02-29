@@ -1,0 +1,414 @@
+#oliven-aside {
+    padding: 60px 30px;
+    width: 350px;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    z-index: 1001;
+    background: #ffefef;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    scrollbar-width: none;
+}
+a:link{
+    text-decoration: none;
+}
+.lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 52px;
+    height: 52px;
+    transform: rotate(45deg);
+    transform-origin: 32px 32px;
+}
+.lds-heart div {
+    top: 23px;
+    left: 19px;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: var(--primary-color);
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+#oliven-aside .oliven-logo a span {
+    display: block;
+    font-size: 30px;
+    color: red;
+    font-family: Dancing Script;
+    font-weight: 400;
+    display: block;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5em;
+}
+#oliven-aside .oliven-logo h6 {
+    font-family: Quicksand;
+    font-weight: bold;
+    text-transform: none;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 5px;
+    color: #000;
+    margin-bottom: 5px;
+}
+#oliven-aside .oliven-main-menu ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+#oliven-aside .oliven-main-menu ul li {
+    margin: 3px 0 3px 0;
+    padding: 0 0 3px 0;
+    list-style: none;
+}
+#oliven-aside .footer1 {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+/* @media screen and (max-width: 1400px)
+#oliven-aside .oliven-main-menu ul li {
+    margin: 0;
+} */
+#oliven-aside .oliven-main-menu ul li a {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.5em;
+    letter-spacing: 0.5px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    border-bottom: 1px solid transparent;
+    text-transform: uppercase;
+}
+span, a, a:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+#oliven-aside .oliven-main-menu ul li {
+    margin: 3px 0 3px 0;
+    padding: 0 0 3px 0;
+    list-style: none;
+}
+#oliven-aside .footer1 {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+#oliven-aside .separator {
+    width: 60px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 1px solid rgb(242 60 68);
+    margin: 5px auto;
+}
+#oliven-aside .footer1 p{
+    font-size: 12px;
+    color: #888;
+    letter-spacing: 0.5px;
+}
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #888;
+    margin: 0 0 20px;
+}
+
+
+/*home*/
+/* @media screen and (max-width: 991px)
+.header {
+    background-position: center center;
+} 
+@media screen and (max-width: 991px)
+.header {
+    background-position: center center;
+}
+chu chuc mung
+@media screen and (max-width: 991px)
+.container {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.container {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+@media (min-width: 768px)
+.container {
+    max-width: 720px;
+}
+@media (min-width: 576px)
+.container {
+    max-width: 540px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}*/
+.header {
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.valign {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.bg-img {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+}
+.text-center {
+    text-align: center !important;
+}
+/* @media (min-width: 768px)
+.col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+} 
+@media screen and (max-width: 1280px)
+.header .caption h1 {
+    font-size: 60px;
+}
+@media screen and (max-width: 1500px)
+.header .caption h1 {
+    font-size: 90px;
+}*/
+.header .caption h1{
+    font-family: Dancing Script;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    font-size: 80px;
+    color: #FFF;
+    display: block;
+    line-height: 1em;
+    position: relative;
+}
+
+.js .animate-box {
+    opacity: 0;
+}
+.header .caption h1 span {
+    display: inline-block;
+}
+.header .caption h5 {
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+span, a, a:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+.header .arrow i {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 20px;
+}
+.header .arrow.bounce {
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+/* couple */
+#couple {
+    background-color: white;
+}
+/* @media screen and (max-width: 1200px)
+.section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+} */
+.container {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+/* @media screen and (max-width: 991px)
+.bridegroom .item, .bridegroom .toright .info {
+    text-align: center;
+} */
+.bridegroom .item {
+    padding: 30px;
+    border-radius: 0px;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid var(--title-in-background-color) !important;
+}
+.js .animate-box {
+    opacity: 0;
+}
+.h-100 {
+    height: 100% !important;
+}
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+.flex-column {
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+}
+.bridegroom .toright .img {
+    float: right;
+}
+/* @media screen and (max-width: 991px)
+.bridegroom .img {
+    margin: auto;
+    float: none !important;
+} */
+.bridegroom .img {
+    max-width: 240px;
+    max-height: 240px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 14px;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+/* @media screen and (max-width: 991px)
+.bridegroom .item, .bridegroom .toright .info {
+    text-align: center;
+} */
+.bridegroom .toright .info {
+    text-align: center;
+}
+/* @media screen and (max-width: 991px)
+.bridegroom .info {
+    margin: 30px 0 0 0 !important;
+} */
+.full-width {
+    width: 100% !important;
+}
+.bridegroom .info h6 {
+    font-size: 40px;
+    margin-bottom: 5px;
+    font-family: Dancing Script;
+}
+.bridegroom .info p {
+    margin-top: 10px;
+}
+.bridegroom .info p i {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #888;
+    margin: 0 0 20px;
+}
+.bridegroom .info .social {
+    margin-top: 10px;
+}
+.bridegroom .toright .info .social a {
+    margin-right: 0;
+    margin-left: 10px;
+}
+/*loi noi*/
+/* @media screen and (max-width: 991px)
+.oliven-couple-title {
+    font-size: 32px;
+    line-height: 1.2em;
+    margin-bottom: 15px;
+} */
+.oliven-couple-title {
+    display: block;
+    position: relative;
+    top: 12px;
+    font-family: 'Alex Brush', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1.5em;
+    margin-bottom: 5px;
+}
+.title-in-background-color {
+    color: red;
+}
+/* media screen and (max-width: 991px)
+.oliven-couple-subtitle {
+    font-size: 18px;
+} */
+.col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.button-accessibilities .theme-btn {
+    padding: 15px 20px !important;
+    min-width: 230px !important;
+    margin: 10px 5px 0 !important;
+    font-size: .8rem !important;
+    text-transform: uppercase;
+}
+#oliven-main {
+    /* width: calc(100% - 350px); */
+    float: right;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
